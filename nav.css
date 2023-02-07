@@ -1,0 +1,251 @@
+:root{
+    --black:#171321;
+    --dkblue:#0d314b;
+    --hotmag:#ff17e4;
+    --magenta:#e310cb;
+    --aqua:#86fbfb;
+    --white:#f7f8fa;
+    --mono:"Oxygen mono",
+    --sans:Oxygen,sans 
+      serif;
+  }
+  body{
+   padding:0;
+   margin:0
+  }
+nav{
+   font-family: var(--mono);
+   font-size:80%; 
+   background-color:#373346
+
+}
+nav h1 a{
+    font-family: var(--sans);
+}
+nav ul{
+    list-style-type: none;
+
+    padding: 0;
+    margin:0;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+nav a{
+    color: var(--white);
+    font-size:2em; 
+    text-decoration: none;
+    display:block;
+}
+nav a:hover{
+color:#ff17e4
+}
+nav li:first-child{
+    flex-basis: 100%;
+    text-align: center;
+}
+nav [class*="fa-"]{
+font-size: 100%;
+color:var(--aqua);
+}
+nav h1 [class*="fa-"]{
+    font-size: 100%;
+    color:var(--aqua);
+    }
+
+.button{
+    padding: 0.5rem;
+    background-color: var(--magenta);
+    border-radius: 10px;
+}    
+.button:hover{
+    color:var(--white);
+    background-color: var(--hotmag)
+}
+
+.hero-unit--large{
+    padding-top:80px;
+    padding-bottom:115px;
+}
+.hero-unit{
+    position: relative;
+    background-color:#DADBF1;
+    color:#fff
+}
+@media (min-width: 768px){
+    .container{
+        padding-right: calc(15px * 2);
+        padding-left: calc(15px * 2);
+    }
+}
+.hero-unit_content{
+    position: relative;
+    z-index:2;
+    max-width: 720px;
+}
+.container-inner{
+    margin:0 auto;
+    width:90%;
+}
+.text-center{
+    text-align: center;
+}
+.hero-unit-title{
+    font-family: 'GT America Standard', sans-serif;
+    font-size: 80px;
+    letter-spacing: -4px;
+    font-weight: 400;
+    margin:0 auto;
+    color:#171321
+}
+form{
+    display:block;
+    margin-top: 2em;
+}
+.search-box--hero-unit{
+    margin-right:auto;
+    margin-left:auto;
+    max-width: 720px;
+}
+.search-box{
+    position: relative;
+}
+input{
+    line-height:32px !important;
+    color:#000 !important;
+    border-color:#000 !important;
+    border-radius:4px !important;
+    font-family: 'GT America Standard', sans-serif;
+}
+input,button, select,textarea{
+font-family:inherit;
+font-size: 20px !important;
+}
+.search-box--hero-unit #query{
+    padding:1rem 1rem;
+    box-shadow:  0 9px 14px 0 rgb(0 0 0 / 10%);;
+}
+input[type="search"]{
+ width:100%; 
+}
+
+.btn{
+line-height:60px !important;
+color:#000 !important;
+border-color:#000 !important;
+border-radius:4px !important;margin-top: 20px;
+}
+.search-btn{
+    text-align: center;
+}
+.actual-btn{
+    line-height:60px !important;
+    width:20%;
+    background-color:#f7f8fa;
+    border-color:#000 !important;
+    border-radius:10px !important;
+    box-shadow:  0 9px 14px 0 rgb(0 0 0 / 10%);
+}
+a{
+    font-size: 30px;
+    text-decoration: none;
+    color:#000
+}
+@media (min-width:
+768px){
+.container{
+    padding-right:calc(15px * 2);
+    padding-left:calc( 15px * 2);
+   
+}
+}
+.container-inner .home{
+max-width:1600px;
+width: 80% !important;
+}
+.container-inner{
+    margin: 0 auto
+}
+@media (min-width:
+768px){
+.category-list{
+   margin-top: 8rem; 
+}
+}
+.category-list{
+    margin-bottom: 4rem;
+    padding-left: 0;
+
+}
+.category-list-items{
+    display:-webkit-box;
+    flex-wrap: wrap;
+    margin-right: calc(15px * -1);
+    margin-left: calc(15px * -1);
+}
+@media (min-width:
+550px){
+.category-list-item{
+   min-height: 115px;
+   width:50%;
+}
+}
+
+.category-list-item{
+    position: relative;
+    display: flex;
+    margin-bottom:3rem;
+    padding-right: 15px;
+}
+.category-list-icon{
+    display:flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.category-list-svg-img-icon{
+    max-height: 120px;
+    margin-right:30px;
+}
+img{
+    max-width:100%;
+    height: auto;
+    border:0;
+}
+.catergory-list-block{
+    position: relative;
+    padding:0 1.5rem 0 0;
+    width:100%;
+    color:#191a1b;
+    transition: all .3s ease;
+}
+.catergory-list-item-content{
+    position:relative;
+    z-index: 2;
+}
+.catergory-list-item-item-title{
+
+}
+h4{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+    font-family: 'GT America Standard', sans-serif;
+    margin: 3rem 0 1rem;
+}
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.catergory-list-item-desc{
+    font-size: 24px;
+    line-height:32px;
+    margin-bottom:20px
+}
